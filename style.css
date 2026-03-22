@@ -345,6 +345,7 @@ a {
     width: 100%;
     height: 380px;
     object-fit: cover;
+    border-radius: 4px;
 }
 
 /* ===== FEATURES SECTION ===== */
@@ -385,6 +386,7 @@ a {
     position: relative;
     padding: 150px 0;
     background: url('https://www.gloryduck.de/wp-content/uploads/2019/10/Glory-Duck-Berlin-Asian-Restaurant-Speisekarte-Gerichte-1.jpg') center/cover no-repeat fixed;
+    background-size: cover;
 }
 
 .menu-overlay {
@@ -402,6 +404,7 @@ a {
     position: relative;
     padding: 150px 0;
     background: url('https://www.gloryduck.de/wp-content/uploads/2019/10/Glory-Duck-Berlin-Asian-Restaurant-Startseite-Reservierung.jpg') center/cover no-repeat fixed;
+    background-size: cover;
 }
 
 .reservation-overlay {
@@ -496,6 +499,12 @@ a {
     .hero-subtext {
         font-size: 14px;
     }
+
+    /* Responsive images for tablet */
+    .about-section img {
+        height: 300px;
+        margin-bottom: 15px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -534,8 +543,31 @@ a {
         justify-content: flex-start;
     }
 
+    /* Fix hero background for mobile */
+    .swiper-slide {
+        background-size: cover !important;
+        background-position: center center !important;
+    }
+
+    .swiper-slide-active {
+        animation: none;
+    }
+
     .menu-section,
     .reservation-section {
         padding: 80px 0;
+        background-attachment: scroll;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    /* Responsive images for mobile */
+    .about-section img {
+        height: 250px;
+        margin-bottom: 20px;
+    }
+
+    .about-section .col-lg-3 {
+        margin-top: 20px;
     }
 }
