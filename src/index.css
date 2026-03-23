@@ -1,0 +1,673 @@
+/* ===== VARIABLES ===== */
+:root {
+  --red: #fcd82d;
+  --dark: #000000;
+  --dark2: #111111;
+  --white: #ffffff;
+  --font: 'Open Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--dark);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===== HEADER ===== */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: transparent;
+  transition: background 0.3s ease;
+}
+
+.site-header.scrolled {
+  background: rgba(0, 0, 0, 0.92);
+  backdrop-filter: blur(6px);
+}
+
+.header-top-bar {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.header-top-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+}
+
+.header-socials {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.header-socials a {
+  color: var(--white);
+  font-size: 15px;
+  transition: color 0.2s;
+}
+
+.header-socials a:hover {
+  color: var(--red);
+}
+
+.header-divider {
+  width: 1px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.header-phone {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--white);
+  letter-spacing: 0.5px;
+}
+
+/* Nav bar */
+.header-nav-bar {
+  padding: 8px 0;
+}
+
+.header-nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.hamburger-btn {
+  display: none;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: var(--white);
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.nav-menu .nav-link {
+  color: var(--white);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 6px 12px;
+  transition: color 0.2s;
+  white-space: nowrap;
+  display: block;
+}
+
+.nav-menu .nav-link:hover,
+.nav-menu .nav-link.active {
+  color: var(--red);
+}
+
+.nav-menu .nav-highlight {
+  font-size: 10px;
+}
+
+/* Language switcher */
+.lang-switcher {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-left: 12px;
+}
+
+.lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 3px 6px;
+  transition: color 0.2s;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font);
+}
+
+.lang-btn img {
+  width: 18px;
+  height: auto;
+}
+
+.lang-btn.active,
+.lang-btn:hover {
+  color: var(--white);
+}
+
+/* Desktop nav wrapper */
+.desktop-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Mobile nav */
+.mobile-nav {
+  display: none;
+  background: rgba(0, 0, 0, 0.95);
+  padding: 16px 24px;
+}
+
+.mobile-nav.open {
+  display: block;
+}
+
+.mobile-nav .nav-menu {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.mobile-nav .lang-switcher {
+  margin-left: 0;
+  margin-top: 12px;
+}
+
+/* ===== HERO SECTION ===== */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+}
+
+.hero-swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.swiper-slide-active {
+  animation: kenBurns 8s ease-in-out forwards;
+}
+
+@keyframes kenBurns {
+  from { background-size: 110%; }
+  to   { background-size: 120%; }
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.hero-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 20px 60px;
+  z-index: 2;
+}
+
+.hero-logo {
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  animation: fadeDown 0.8s ease both;
+}
+
+.hero-text {
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1.7;
+  margin-bottom: 16px;
+  max-width: 520px;
+  white-space: pre-line;
+  animation: fadeUp 0.8s ease 0.2s both;
+}
+
+.hero-subtext {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 36px;
+  max-width: 480px;
+  color: rgba(255, 255, 255, 0.9);
+  white-space: pre-line;
+  animation: fadeUp 0.8s ease 0.4s both;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  animation: fadeUp 0.8s ease 0.6s both;
+}
+
+.btn-hero {
+  display: inline-block;
+  background-color: var(--red);
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 14px 28px;
+  border: 2px solid var(--red);
+  transition: all 0.25s ease;
+  cursor: pointer;
+  font-family: var(--font);
+}
+
+.btn-hero:hover {
+  background-color: transparent;
+  color: var(--white);
+}
+
+.btn-hero-outline {
+  background-color: transparent;
+  border-color: var(--white);
+}
+
+.btn-hero-outline:hover {
+  background-color: var(--red);
+  border-color: var(--red);
+}
+
+/* Swiper pagination */
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--red);
+}
+
+/* Animations */
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-25px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(25px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== ABOUT SECTION ===== */
+.about-section {
+  background-color: var(--dark);
+  padding: 80px 0;
+}
+
+.about-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.section-title h2 {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.section-title h3 {
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.title-divider {
+  width: 50px;
+  height: 2px;
+  background: var(--red);
+  margin: 18px auto;
+}
+
+.about-text {
+  font-size: 15px;
+  line-height: 1.9;
+  color: var(--white);
+  text-align: center;
+  margin-top: 16px;
+}
+
+.about-img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* ===== FEATURES SECTION ===== */
+.features-section {
+  background-color: var(--dark);
+  padding: 60px 0;
+}
+
+.features-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.feature-box {
+  padding: 30px 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.feature-box.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.feature-box:hover {
+  transform: translateY(-8px);
+}
+
+.feature-icon {
+  font-size: 42px;
+  color: var(--red);
+  margin-bottom: 18px;
+  display: block;
+}
+
+.feature-box h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.feature-box p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* ===== MENU SECTION ===== */
+.menu-section {
+  position: relative;
+  padding: 150px 0;
+  background: url('https://www.gloryduck.de/wp-content/uploads/2019/10/Glory-Duck-Berlin-Asian-Restaurant-Speisekarte-Gerichte-1.jpg') center/cover no-repeat fixed;
+}
+
+.menu-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.menu-inner {
+  position: relative;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.menu-section .section-title h2 {
+  font-size: 30px;
+}
+
+/* ===== RESERVATION SECTION ===== */
+.reservation-section {
+  position: relative;
+  padding: 150px 0 80px;
+  background: url('https://www.gloryduck.de/wp-content/uploads/2019/10/Glory-Duck-Berlin-Asian-Restaurant-Startseite-Reservierung.jpg') center/cover no-repeat fixed;
+}
+
+.reservation-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.reservation-inner {
+  position: relative;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.reservation-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+/* ===== FOOTER ===== */
+.site-footer {
+  background-color: var(--dark);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 14px;
+  padding: 24px 0;
+}
+
+.footer-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.site-footer a:hover {
+  color: var(--red);
+}
+
+.footer-socials {
+  display: flex;
+  gap: 14px;
+}
+
+.footer-socials a {
+  color: var(--white);
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+.footer-socials a:hover {
+  color: var(--red);
+}
+
+/* ===== BACK TO TOP ===== */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 46px;
+  height: 46px;
+  background: var(--red);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 999;
+  cursor: pointer;
+  border: none;
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top:hover {
+  background: #c0272c;
+  transform: translateY(-4px);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 991px) {
+  .hamburger-btn {
+    display: block;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reservation-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-logo {
+    max-width: 220px;
+  }
+
+  .hero-text {
+    font-size: 15px;
+  }
+
+  .hero-subtext {
+    font-size: 14px;
+  }
+
+  .about-img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-content {
+    padding: 90px 20px 40px;
+  }
+
+  .hero-logo {
+    max-width: 180px;
+  }
+
+  .hero-text {
+    font-size: 13px;
+  }
+
+  .hero-subtext {
+    font-size: 13px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-hero {
+    width: 260px;
+    text-align: center;
+  }
+
+  .section-title h2,
+  .section-title h3 {
+    font-size: 24px;
+  }
+
+  .footer-socials {
+    justify-content: flex-start;
+  }
+
+  .swiper-slide {
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+
+  .swiper-slide-active {
+    animation: none;
+  }
+
+  .menu-section,
+  .reservation-section {
+    padding: 80px 0;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .about-img {
+    height: 250px;
+    margin-bottom: 20px;
+  }
+}
