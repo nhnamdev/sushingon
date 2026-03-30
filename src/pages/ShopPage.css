@@ -1,0 +1,6 @@
+/* Trang shop có header riêng nên padding top = chiều cao header shop */
+.shop-page-main {
+  padding-top: 70px; /* bằng chiều cao ShopHeader */
+  min-height: 100vh;
+  background: #000;
+}

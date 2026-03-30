@@ -146,6 +146,23 @@ a {
   font-size: 10px;
 }
 
+.nav-menu .nav-order-btn {
+  background: #fcd82d;
+  color: #000 !important;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 7px 14px;
+  border-radius: 2px;
+  letter-spacing: 1px;
+  transition: background 0.2s, transform 0.2s !important;
+}
+
+.nav-menu .nav-order-btn:hover {
+  background: #e5c520 !important;
+  color: #000 !important;
+  transform: translateY(-1px);
+}
+
 /* Language switcher */
 .lang-switcher {
   display: flex;
@@ -451,31 +468,6 @@ a {
   font-size: 15px;
   line-height: 1.8;
   color: rgba(255, 255, 255, 0.85);
-}
-
-/* ===== MENU SECTION ===== */
-.menu-section {
-  position: relative;
-  padding: 150px 0;
-  background: url('https://www.gloryduck.de/wp-content/uploads/2019/10/Glory-Duck-Berlin-Asian-Restaurant-Speisekarte-Gerichte-1.jpg') center/cover no-repeat fixed;
-}
-
-.menu-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.6);
-}
-
-.menu-inner {
-  position: relative;
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 20px;
-  text-align: center;
-}
-
-.menu-section .section-title h2 {
-  font-size: 30px;
 }
 
 /* ===== RESERVATION SECTION ===== */

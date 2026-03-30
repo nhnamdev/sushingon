@@ -35,7 +35,7 @@ export default function HeroSlider({ t }) {
               <p className="hero-text">{t.hero.text}</p>
               <p className="hero-subtext">{t.hero.subtext}</p>
               <div className="hero-buttons">
-                <a href="#order" className="btn-hero">{t.hero.btn1}</a>
+                <a href="/shop" className="btn-hero">{t.hero.btn1}</a>
                 <a href="#reservation-form" className="btn-hero btn-hero-outline">{t.hero.btn2}</a>
               </div>
             </div>

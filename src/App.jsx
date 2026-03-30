@@ -1,12 +1,9 @@
 import { useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import Header from './components/Header/Header'
-import HeroSlider from './components/HeroSlider/HeroSlider'
-import About from './components/About/About'
-import Features from './components/Features/Features'
-import MenuSection from './components/MenuSection/MenuSection'
-import ReservationSection from './components/ReservationSection/ReservationSection'
-import Footer from './components/Footer/Footer'
 import BackToTop from './components/BackToTop/BackToTop'
+import HomePage from './pages/HomePage'
+import ShopPage from './pages/ShopPage'
 import translations from './data/translations'
 
 function App() {
@@ -14,16 +11,27 @@ function App() {
   const t = translations[lang]
 
   return (
-    <>
-      <Header t={t} lang={lang} onLangChange={setLang} />
-      <HeroSlider t={t} />
-      <About t={t} />
-      <Features t={t} />
-      <MenuSection t={t} />
-      <ReservationSection t={t} />
-      <Footer />
-      <BackToTop />
-    </>
+    <Routes>
+      {/* ── Trang chủ ── */}
+      <Route
+        path="/"
+        element={
+          <>
+            <Header t={t} lang={lang} onLangChange={setLang} />
+            <HomePage t={t} />
+            <BackToTop />
+          </>
+        }
+      />
+
+      {/* ── Cửa hàng trực tuyến ── */}
+      <Route
+        path="/shop"
+        element={
+          <ShopPage t={t} lang={lang} onLangChange={setLang} />
+        }
+      />
+    </Routes>
   )
 }
 

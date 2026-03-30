@@ -7,10 +7,10 @@ const translations = {
       reservation: 'Đặt Chỗ',
       contact: 'Liên Hệ',
       order: 'ĐẶT HÀNG TRỰC TUYẾN',
-      duckbox: 'HỘP VỊT QUAY BẮC KINH',
+
     },
     hero: {
-      text: 'TƯƠI NGON, NHẸ NHÀNG, HẤP DẪN – ĐÓ LÀ ẨM\nTHỰC CHÂU Á CỦA GLORY DUCK.',
+      text: 'TƯƠI NGON, NHẸ NHÀNG, HẤP DẪN – ĐÓ LÀ ẨM\nTHỰC CHÂU Á CỦA SUSHI NGON.',
       subtext: 'ĐẶT HÀNG TRỰC TUYẾN NGAY ĐỂ MANG VỀ &\nGIAO HÀNG TẬN NƠI HOẶC CHỌN HỘP VỊT QUAY\nBẮC KINH CỦA CHÚNG TÔI.',
       btn1: 'CỬA HÀNG TRỰC TUYẾN',
       btn2: 'Đặt bàn',
@@ -27,7 +27,7 @@ const translations = {
       },
       space: {
         title: 'Không Gian Đặc Sắc',
-        text: 'Glory Duck hiện đại và đặc trưng Việt Nam tại SushiNgon – hãy để bạn bị bất ngờ',
+        text: 'SushiNgon hiện đại và đặc trưng Việt Nam tại SushiNgon – hãy để bạn bị bất ngờ',
       },
       service: {
         title: 'Dịch Vụ Cá Nhân',
@@ -35,13 +35,13 @@ const translations = {
       },
     },
     menu: {
-      title: 'Vịt Trái Cây – Vịt Giòn – Glory Duck Berlin',
+      title: 'Vịt Trái Cây – Vịt Giòn – SushiNgon Berlin',
       btn: 'Thực Đơn',
     },
     reservation: {
       feature1: {
         title: 'Món Ăn Ngon',
-        text: 'Vịt theo cách khác? Giòn, mọng nước và gần như không có chất béo – đó là cách chế biến Việt Nam và đặc sản của Glory Duck tại Friedrichshain',
+        text: 'Vịt theo cách khác? Giòn, mọng nước và gần như không có chất béo – đó là cách chế biến Việt Nam và đặc sản của SushiNgon tại Friedrichshain',
       },
       feature2: {
         title: 'Không Gian Sang Trọng',
@@ -79,10 +79,10 @@ const translations = {
       reservation: 'Reservation',
       contact: 'Contact',
       order: 'ORDER ONLINE',
-      duckbox: 'PEKING DUCK BOX',
+
     },
     hero: {
-      text: "FRESH, LIGHT, ATTRACTIVE – THAT'S\nGLORY DUCK'S ASIAN CUISINE.",
+      text: "FRESH, LIGHT, ATTRACTIVE – THAT'S\nSUSHI NGON'S ASIAN CUISINE.",
       subtext: 'ORDER ONLINE NOW FOR TAKEAWAY &\nDELIVERY OR CHOOSE OUR\nPEKING DUCK BOX.',
       btn1: 'ONLINE STORE',
       btn2: 'Book a Table',
@@ -90,7 +90,7 @@ const translations = {
     about: {
       title1: 'Streetfood Highlight',
       title2: 'in Berlin-Friedrichshain',
-      text: 'The main character and highlight of our restaurant is the duck, the glory duck. In a modern space decorated in Vietnamese streetfood restaurant style, we focus on preparing duck in traditional style alongside classic Vietnamese and Asian dishes. Fresh and high-quality ingredients are individually prepared in wok pans and served by our dedicated service team.',
+      text: 'The main character and highlight of our restaurant is the duck, the SushiNgon . In a modern space decorated in Vietnamese streetfood restaurant style, we focus on preparing duck in traditional style alongside classic Vietnamese and Asian dishes. Fresh and high-quality ingredients are individually prepared in wok pans and served by our dedicated service team.',
     },
     features: {
       quality: {
@@ -99,7 +99,7 @@ const translations = {
       },
       space: {
         title: 'Distinctive Space',
-        text: 'Glory Duck modern and Vietnamese characteristic in Berlin-Friedrichshain – let yourself be surprised',
+        text: 'SushiNgon modern and Vietnamese characteristic in Berlin-Friedrichshain – let yourself be surprised',
       },
       service: {
         title: 'Personal Service',
@@ -107,13 +107,13 @@ const translations = {
       },
     },
     menu: {
-      title: 'Fruit Duck – Crispy Duck – Glory Duck Berlin',
+      title: 'Fruit Duck – Crispy Duck – SushiNgon Berlin',
       btn: 'Menu',
     },
     reservation: {
       feature1: {
         title: 'Delicious Food',
-        text: "Duck in a different way? Crispy, juicy and almost fat-free – that's the Vietnamese preparation and specialty of Glory Duck in Friedrichshain",
+        text: "Duck in a different way? Crispy, juicy and almost fat-free – that's the Vietnamese preparation and specialty of SushiNgon in Friedrichshain",
       },
       feature2: {
         title: 'Luxurious Space',
@@ -151,10 +151,10 @@ const translations = {
       reservation: 'Reservierung',
       contact: 'Kontakt',
       order: 'ONLINE BESTELLEN',
-      duckbox: 'PEKINGENTE BOX',
+
     },
     hero: {
-      text: 'FRISCH, LEICHT, ATTRAKTIV – DAS IST\nDIE ASIATISCHE KÜCHE VON GLORY DUCK.',
+      text: 'FRISCH, LEICHT, ATTRAKTIV – DAS IST\nDIE ASIATISCHE KÜCHE VON SUSHI NGON.',
       subtext: 'JETZT ONLINE BESTELLEN FÜR ABHOLUNG &\nLIEFERUNG ODER WÄHLEN SIE UNSERE\nPEKINGENTE BOX.',
       btn1: 'ONLINE SHOP',
       btn2: 'Tisch Reservieren',
@@ -162,7 +162,7 @@ const translations = {
     about: {
       title1: 'Streetfood Highlight',
       title2: 'in Berlin-Friedrichshain',
-      text: 'Die Hauptfigur und das Highlight unseres Restaurants ist die Ente, die Glory Duck. In einem modernen Raum, der im Stil eines vietnamesischen Streetfood-Restaurants eingerichtet ist, konzentrieren wir uns auf die Zubereitung von Ente im traditionellen Stil neben klassischen vietnamesischen und asiatischen Gerichten. Frische und hochwertige Zutaten werden einzeln im Wok zubereitet und von unserem engagierten Service-Team serviert.',
+      text: 'Die Hauptfigur und das Highlight unseres Restaurants ist die Ente, die SushiNgon. In einem modernen Raum, der im Stil eines vietnamesischen Streetfood-Restaurants eingerichtet ist, konzentrieren wir uns auf die Zubereitung von Ente im traditionellen Stil neben klassischen vietnamesischen und asiatischen Gerichten. Frische und hochwertige Zutaten werden einzeln im Wok zubereitet und von unserem engagierten Service-Team serviert.',
     },
     features: {
       quality: {
@@ -171,7 +171,7 @@ const translations = {
       },
       space: {
         title: 'Besonderer Raum',
-        text: 'Glory Duck modern und vietnamesisch charakteristisch in Berlin-Friedrichshain – lassen Sie sich überraschen',
+        text: 'SushiNgon modern und vietnamesisch charakteristisch in Berlin-Friedrichshain – lassen Sie sich überraschen',
       },
       service: {
         title: 'Persönlicher Service',
@@ -179,13 +179,13 @@ const translations = {
       },
     },
     menu: {
-      title: 'Fruchtente – Knusprige Ente – Glory Duck Berlin',
+      title: 'Fruchtente – Knusprige Ente – SushiNgon Berlin',
       btn: 'Speisekarte',
     },
     reservation: {
       feature1: {
         title: 'Leckeres Essen',
-        text: 'Ente mal anders? Knusprig, saftig und fast fettfrei – das ist die vietnamesische Zubereitung und Spezialität von Glory Duck in Friedrichshain',
+        text: 'Ente mal anders? Knusprig, saftig und fast fettfrei – das ist die vietnamesische Zubereitung und Spezialität von SushiNgon in Friedrichshain',
       },
       feature2: {
         title: 'Luxuriöser Raum',

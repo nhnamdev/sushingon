@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
-const NAV_KEYS = ['home', 'about', 'menu', 'contact', 'order']
-const NAV_HREFS = ['#home', '#about', '#menu', '#contact', '#order']
-const NAV_HIGHLIGHTS = [false, false, false, false, true]
+const NAV_KEYS = ['home', 'about', 'menu', 'contact']
+const NAV_HREFS = ['#home', '#about', '#menu', '#contact']
+const NAV_HIGHLIGHTS = [false, false, false, false]
 
 const LANGS = [
   { code: 'vi', label: 'VI', flag: 'https://flagcdn.com/w20/vn.png' },
@@ -59,6 +60,11 @@ export default function Header({ t, lang, onLangChange }) {
           </a>
         </li>
       ))}
+      <li>
+        <Link to="/shop" className="nav-link nav-highlight ">
+          {t.nav.order}
+        </Link>
+      </li>
     </ul>
   )
 

@@ -1,6 +1,4 @@
-# Glory Duck Restaurant Website Clone
 
-Ein moderner Clone der Glory Duck Restaurant Website mit responsivem Design.
 
 ## Features
 
@@ -37,7 +35,7 @@ python -m http.server 8000
 ## Dateistruktur
 
 ```
-glory-duck-clone/
+/
 │
 ├── index.html          # Hauptseite
 ├── style.css           # Stylesheet
@@ -113,7 +111,6 @@ Fügen Sie neue Menüpunkte in der Navigation hinzu:
 
 ## Lizenz
 
-Dieses Projekt ist ein Klon zu Demonstrationszwecken. Alle Rechte am Original-Design liegen bei Glory Duck Restaurant.
 
 ## Kontakt
 
