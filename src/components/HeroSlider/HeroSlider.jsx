@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Pagination, EffectFade } from 'swiper/modules'
 import 'swiper/css'
@@ -35,7 +35,7 @@ export default function HeroSlider({ t }) {
               <p className="hero-text">{t.hero.text}</p>
               <p className="hero-subtext">{t.hero.subtext}</p>
               <div className="hero-buttons">
-                <a href="/shop" className="btn-hero">{t.hero.btn1}</a>
+                <Link to="/shop" className="btn-hero">{t.hero.btn1}</Link>
                 <a href="#reservation-form" className="btn-hero btn-hero-outline">{t.hero.btn2}</a>
               </div>
             </div>
